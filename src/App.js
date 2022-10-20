@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import ColorThings from './pages/ColorThings/ColorThings'
 
 const App = () => {
   const bensThings = [
@@ -61,6 +62,13 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+  const caroThings = [
+    {
+      name: "colors",
+      image: "",  
+      attributes: ['purple', 'blue'],
+    },
+  ]
 
   return (
     <Routes>
@@ -77,6 +85,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-color-things"
+        element={<ColorThings things={caroThings} />}
       />
     </Routes>
   )
