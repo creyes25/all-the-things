@@ -55,13 +55,14 @@ const App = () => {
     },
   ]
 
-  const huntersThings = [
+  const anasThings = [
     {
-      name: "energy drinks",
+      name: "cats",
       image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
-      attributes: ["efficient", "reusability", "not a taco", "beautiful"],
+      attributes: ["cute", "furry", "beautiful"],
     },
   ]
+
   const caroThings = [
     {
       name: "colors",
@@ -84,7 +85,7 @@ const App = () => {
       />
       <Route
         path="/the-silly-things"
-        element={<SillyThings things={huntersThings} />}
+        element={<SillyThings things={anasThings} />}
       />
       <Route
         path="/the-color-things"
